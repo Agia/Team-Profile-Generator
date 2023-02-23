@@ -247,19 +247,18 @@ async function init() {
 function optionsPrompt(answers) {
 
     if (answers.employeeRole === "Add an engineer") {
-        //TODO: Delete unnecessary console.logs from function
-        // console.log("Engineer");
+        // Call function to generate an Engineer object
         addEngineer();
     } else if (answers.employeeRole === 'Add an intern') {
-        // console.log("Intern");
+        // Call function to generate an Intern object
         addIntern();
     } else {
-        console.log('Finished');
-        console.log(team);
-        // TODO: How to call function to render HTML?
-        // render(team);
+        console.log('All done!\nCheck out index.html to see your team profiles.');
+        // Passes data to generate index.html
+        generateHTML(team);
     }
-}        
+}
+     
 // Handles the creation of new Engineer objects
 async function addEngineer() {
     // Saves input to answers
@@ -288,6 +287,15 @@ async function addIntern() {
 
     // Calls the function, passing in the user input from prior prompt
     optionsPrompt(answers);
+}
+
+// Generates index.html with user data
+function generateHTML(data) {
+    fs.writeFile('index.html', render(data), function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
 }
 
 // Call to function to initialize program
