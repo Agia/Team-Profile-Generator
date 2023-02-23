@@ -89,7 +89,7 @@ const engineerQuestions = [
 ];
 
 // Array of questions to be passed to inquirer.prompt on selecting 'Add intern'
-const questionsIntern = [
+const internQuestions = [
     {
         type: 'input',
         name: 'name',
@@ -141,4 +141,17 @@ async function init() {
 // Function to determine which action to take after initial, and each subsequent generated employee
 function optionsPrompt(answers) {
 
-}
+    if (answers.employeeRole === "Add an engineer") {
+        //TODO: Delete unnecessary console.logs from function
+        // console.log("Engineer");
+        addEngineer();
+    } else if (answers.employeeRole === 'Add an intern') {
+        // console.log("Intern");
+        addIntern();
+    } else {
+        console.log('Finished');
+        console.log(team);
+        // TODO: How to call function to render HTML?
+        // render(team);
+    }
+}        
