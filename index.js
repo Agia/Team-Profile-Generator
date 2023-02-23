@@ -1,3 +1,4 @@
+// ** IMPORTS ** //
 // Import necessary classes
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
@@ -14,6 +15,8 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
 
+
+// ** VARIABLES ** //
 // Array to hold team member objects
 const team = [];
 
@@ -118,3 +121,24 @@ const questionsIntern = [
     },
 ];
 
+
+// ** FUNCTIONS ** //
+// Function to run on program load
+async function init() {
+    // Save output from inquirer prompt to answers
+    const answers = await inquirer
+        // Start prompt using array starterQuestions
+        .prompt(starterQuestions)
+        // Save inputs to a new Manager instance
+        const teamManager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+        // Push new Manager object to 'team' array
+        team.push(teamManager);
+        // Call function to decide next steps passing input data generated from previous prompt
+        optionsPrompt(answers);
+
+    }
+
+// Function to determine which action to take after initial, and each subsequent generated employee
+function optionsPrompt(answers) {
+
+}
