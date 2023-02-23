@@ -94,25 +94,60 @@ const engineerQuestions = [
     {
         type: 'input',
         name: 'name',
-        message: 'Enter this employee\'s name:'
+        message: 'Enter this employee\'s name:',
+        validate: name => {
+            if (name) {
+                return true;
+            } else {
+                console.log ("\nYou must enter a name.");
+                return false; 
+            }
+        },
     },
 
     {
         type: 'input',
         name: 'id',
         message: 'Enter this employee\'s employee ID number:',
+        validate: id => {
+            if (!isNaN(id)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a number.");
+                return false;
+            }
+        },
     },
 
     {
         type: 'input',
         name: 'email',
         message: 'Enter this employee\'s email address:',
+        validate: email => {
+            const validFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(validFormat.test(email)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a valid email.")
+                return false; 
+            }
+
+        },
     },
 
     {
         type: 'input',
         name: 'github',
-        message: 'Enter this employee\'s GitHub username:'
+        message: 'Enter this employee\'s GitHub username:',
+        validate: username => {
+            if (username) {
+                return true;
+            } else {
+                console.log ("\nYou must enter a username.");
+                return false; 
+            }
+        },
     },
 
     {
@@ -128,25 +163,60 @@ const internQuestions = [
     {
         type: 'input',
         name: 'name',
-        message: 'Enter this employee\'s name:'
+        message: 'Enter this employee\'s name:',
+        validate: name => {
+            if (name) {
+                return true;
+            } else {
+                console.log ("\nYou must enter a name.");
+                return false; 
+            }
+        },
     },
 
     {
         type: 'input',
         name: 'id',
         message: 'Enter this employee\'s employee ID number:',
+        validate: id => {
+            if (!isNaN(id)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a number.");
+                return false;
+            }
+        },
     },
 
     {
         type: 'input',
         name: 'email',
         message: 'Enter this employee\'s email address:',
+        validate: email => {
+            const validFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(validFormat.test(email)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a valid email.")
+                return false; 
+            }
+
+        },
     },
 
     {
         type: 'input',
         name: 'school',
-        message: 'Enter this employee\'s school:'
+        message: 'Enter this employee\'s school:',
+        validate: school => {
+            if (school) {
+                return true;
+            } else {
+                console.log ("\nYou must enter a school.");
+                return false; 
+            }
+        },
     },
     {
         type: 'list',
