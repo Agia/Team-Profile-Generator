@@ -54,12 +54,31 @@ const starterQuestions = [
         type: 'input',
         name: 'email',
         message: 'Enter the team manager\'s email address:',
+        validate: email => {
+            const validFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(validFormat.test(email)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a valid email.")
+                return false; 
+            }
+
+        },
     },
 
     {
         type: 'input',
         name: 'officeNumber',
-        message: 'Enter the team manager\'s office number:'
+        message: 'Enter the team manager\'s office number:',
+        validate: officeNumber => {
+            if (!isNaN(officeNumber)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a number.");
+                return false;
+            }
+        },
     },
 
     {
