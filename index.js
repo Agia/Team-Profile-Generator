@@ -25,13 +25,29 @@ const starterQuestions = [
     {
         type: 'input',
         name: 'name',
-        message: 'Enter the team manager\'s name:'
+        message: 'Enter the team manager\'s name:',
+        validate: name => {
+            if (name) {
+                return true;
+            } else {
+                console.log ("\nYou must enter a name.");
+                return false; 
+            }
+        },
     },
 
     {
         type: 'input',
         name: 'id',
         message: 'Enter the team manager\'s employee ID number:',
+        validate: id => {
+            if (!isNaN(id)) {
+                return true;
+            } else {
+                console.log("\nYou need to enter a number.");
+                return false;
+            }
+        }
     },
 
     {
@@ -127,8 +143,8 @@ const internQuestions = [
 async function init() {
     // Save output from inquirer prompt to answers
     const answers = await inquirer
-        // Start prompt using array starterQuestions
-        .prompt(starterQuestions)
+    // Start prompt using array starterQuestions
+    .prompt(starterQuestions)
         // Save inputs to a new Manager instance
         const teamManager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
         // Push new Manager object to 'team' array
@@ -136,7 +152,7 @@ async function init() {
         // Call function to decide next steps passing input data generated from previous prompt
         optionsPrompt(answers);
 
-    }
+}
 
 // Function to determine which action to take after initial, and each subsequent generated employee
 function optionsPrompt(answers) {
