@@ -155,3 +155,35 @@ function optionsPrompt(answers) {
         // render(team);
     }
 }        
+// Handles the creation of new Engineer objects
+async function addEngineer() {
+    // Saves input to answers
+    const answers = await inquirer
+    // Presents user with prompts from engineerQuestion array
+    .prompt(engineerQuestions)
+
+    // Creates a new instance of Engineer class and pushes it the 'team' array
+    const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
+    team.push(engineer);
+
+    // Calls the function, passing in the user input from prior prompt
+    optionsPrompt(answers);
+}
+
+// Handles the creation of new Intern objects
+async function addIntern() {
+    // Saves input to answers
+    const answers = await inquirer
+    // Presents user with prompts from internQuestions array
+    .prompt(internQuestions)
+
+    // Creates a new instance of Intern class and pushes it the 'team' array
+    const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
+    team.push(intern);
+
+    // Calls the function, passing in the user input from prior prompt
+    optionsPrompt(answers);
+}
+
+// Call to function to initialize program
+init();
