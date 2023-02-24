@@ -5,7 +5,7 @@
   <p align="center">
     A CLI application that generates an HTML webpage of a team, based on user input.
     <br />
-    <a href="https://github.com/Agia/Team-Profile-Generator"><strong>View Demo</strong></a>
+    <a href="https://agia.github.com/Team-Profile-Generator"><strong>View Demo</strong></a>
     <strong>||</strong>
     <a href="https://github.com/Agia/Team-Profile-Generator/issues">Report Bug</a>
     <strong>||</strong>
@@ -19,12 +19,12 @@
 
 ## Table of Contents
 <details>
-  <summary>Expand TOC...</summary>
+  <summary><strong>Expand TOC...</strong></summary>
   <ol>
     <li>
       <a href="#description">Description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-using">Built Using</a></li>
       </ul>
     </li>
     <li>
@@ -62,8 +62,6 @@ A Node.js command-line application, that takes in information, from the user, ab
 ## Getting Started
 
 To get a local copy up and running follow the steps outlined below.
-
-<hr/>
 
 ### Prerequisites
 
@@ -149,7 +147,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[issues-url]: https://github.com/Agia/Team-Profile-Generator/issues
-[product-screenshot]: images/screenshot.png
 [Node.js]: https://img.shields.io/badge/node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=white
 [Node-url]: https://nodejs.org
