@@ -291,7 +291,7 @@ async function addIntern() {
 
 // Generates index.html with user data
 function generateHTML(data) {
-    fs.writeFile('index.html', render(data), function(error) {
+    fs.writeFile(outputPath, render(data), function(error) {
         if (error) {
             console.log(error);
         }

@@ -119,7 +119,10 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 As this project was part of a time-limited challenge, my focus was on meeting the remit of the challenge, and it's particular requirements as completely, and as well as possible, within the time alloted.
 
 With that in mind, I have listed a few areas I would like to revisit, and improve upon, in the future, that were outside of the requirements of the challenge, but could provide an opportunity to further develop my skill set.
+
 - [ ] Validation for repeated number inputs relating to employee `ID` number.
+- [ ] Clear previous input from command-line, if not validated (currently retains previous entry)
+- [ ] Improve the responsiveness of the provided HTML, and change the aesthetic to be less generic.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
