@@ -252,8 +252,8 @@ function optionsPrompt(answers) {
         // Call function to generate an Intern object
         addIntern();
     } else {
-        console.log('All done!\nCheck out index.html to see your team profiles.');
-        // Passes data to generate index.html
+        console.log('All done!\nCheck out "output/team.html" to see your team profiles.');
+        // Passes data to generate `output/team.html`
         generateHTML(team);
     }
 }
