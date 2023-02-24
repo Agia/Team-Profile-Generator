@@ -19,7 +19,7 @@
 
 ## Table of Contents
 <details>
-  <summary>Expand TOC</summary>
+  <summary>Expand TOC...</summary>
   <ol>
     <li>
       <a href="#description">Description</a>
@@ -35,10 +35,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#future-p">Future Plans</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#future-plans">Future Plans</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -63,8 +61,7 @@ A Node.js command-line application, that takes in information, from the user, ab
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow the steps outlined below.
 
 <hr/>
 
@@ -92,7 +89,10 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 ## Usage
 
 - Open your command-line, and navigate to the parent folder of the repo (it will contain `index.js`).
-- Type `node index.js` into your command-line.
+- Enter the following into your command-line:
+    ```sh
+    node index.js
+    ```
 - Follow the prompts, answering the questions as prompted.
 - Once you select the option to 'Finish building your team', a `team.html` file will be generated, containing your team profiles from the information provided, and can be found in the `output` directory (`output/team.html`).
 
@@ -126,33 +126,10 @@ With that in mind, I have listed a few areas I would like to revisit, and improv
 
 <br/>
 
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## License
 <img src="https://img.shields.io/static/v1?label=LICENSE&message=MIT&color=orange&style=for-the-badge" />
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<br/>
-
-## Contact
-
-Project Link: [https://github.com/Agia/Team-Profile-Generator](https://github.com/Agia/Team-Profile-Generator)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
