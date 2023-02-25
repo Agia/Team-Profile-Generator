@@ -120,6 +120,11 @@ With that in mind, I have listed a few areas I would like to revisit, and improv
 
 - [ ] Validation for repeated number inputs relating to employee `ID` number.
 - [ ] Clear previous input from command-line, if not validated (currently retains previous entry)
+- [ ] Ensuring proper capitalization on user input, prior to output:
+    - [ ] Email all to lowercase.
+    - [ ] Capitalize first and last names passed
+        - Ideally, this would allow for lower case middle strings (Ana **da** Armas, for example).
+- [ ] Allowing for a company email slug to be entered at start (`mia.paulson@company.com`, so only `mia.paulson` would need to be entered as `@company.com` would be added programmatically).
 - [ ] Improve the responsiveness of the provided HTML, and change the aesthetic to be less generic.
 
 
