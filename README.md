@@ -100,11 +100,11 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 
 #### Application in Use
 <!-- TODO: Upload and add link to PNG once completed -->
-- ![Screenshot of the command-line application in use]()
+![Screenshot of the command-line application in use]()
 
 #### Generated Output
 <!-- TODO: Upload and add link to PNG once completed -->
-- ![Screenshot of the generated HTML output from the app]()
+![Screenshot of the generated HTML output from the app]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +123,7 @@ With that in mind, I have listed a few areas I would like to revisit, and improv
     - [ ] Capitalize first and last names passed
         - Ideally, this would allow for lower case middle strings (Ana **da** Armas, for example).
 - [ ] Allowing for a company email slug to be entered at start (`mia.paulson@company.com`, so only `mia.paulson` would need to be entered as `@company.com` would be added programmatically).
-- [ ] Improve the responsiveness of the provided HTML, and change the aesthetic to be less generic.
+- [x] Improve the responsiveness of the provided HTML, and change the aesthetic to be less generic.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
