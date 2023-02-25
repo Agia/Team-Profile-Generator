@@ -5,8 +5,6 @@
   <p align="center">
     A CLI application that generates an HTML webpage of a team, based on user input.
     <br />
-    <a href="https://agia.github.com/Team-Profile-Generator"><strong>View Demo</strong></a>
-    <strong>||</strong>
     <a href="https://github.com/Agia/Team-Profile-Generator/issues">Report Bug</a>
     <strong>||</strong>
     <a href="https://github.com/Agia/Team-Profile-Generator/issues">Request Feature</a>
