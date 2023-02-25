@@ -1,8 +1,5 @@
-/* Stylesheet for use with alternative non-provided HTML output */
-
 /** FONTS **/
-/* Handwriting / cursive fonts */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Coming+Soon&family=Covered+By+Your+Grace&family=Permanent+Marker&family=Rock+Salt&family=Shadows+Into+Light+Two&family=Shantell+Sans:wght@500&family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Coming+Soon&family=Covered+By+Your+Grace&family=Permanent+Marker&family=Shadows+Into+Light+Two&display=swap');
 
 /** VARIABLES **/
 :root {
