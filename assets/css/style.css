@@ -1,0 +1,204 @@
+/* Stylesheet for use with alternative non-provided HTML output */
+
+/** FONTS **/
+/* Handwriting / cursive fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Coming+Soon&family=Covered+By+Your+Grace&family=Permanent+Marker&family=Rock+Salt&family=Shadows+Into+Light+Two&family=Shantell+Sans:wght@500&family=Solitreo&display=swap');
+
+/** VARIABLES **/
+:root {
+    --light: #fff;
+    --dark: #242424;
+    --blue: dodgerblue;
+    --title: "Helvetica";
+    --body: "Menlo";
+    --marker: "Permanent Marker"
+    --t0: "Amatic SC";
+    --t1: "Annie Use Your Telescope";
+    --t2: "Coming Soon";
+    --t3: "Covered By Your Grace";
+    --t5: "Shadows Into Light Two";
+}
+
+
+/** RESET **/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** STYLES **/
+
+body {
+    font-family: var(--body);
+    background-color: rgb(255, 80, 80);
+}
+
+header {
+    display: flex;
+    background-color: beige;
+    padding: 3.5rem 0;
+    margin-bottom: 3rem;
+    border-bottom: 8px var(--dark) solid;
+}
+
+h1 {
+    margin: 0 auto;
+    font-family: var(--body);
+    font-size: 3rem;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+
+.card {
+    background-color: #fbfbfb;
+    border: #777777 25px solid;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+}
+
+.card-header {
+    color: var(-dark);
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-family: "Permanent Marker";
+    padding: 0.5rem;
+    background-color: rgb(16, 219, 255);
+    margin: 1rem 0 0 0;
+    transform: rotate(-5deg);
+    max-width: 150px;
+    width: fit-content;
+    text-align: center;
+
+}
+
+.position {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--t3);
+    padding: 1rem;
+    margin: auto;
+    background-color: yellow;
+    color: var(--dark);
+    width: fit-content;
+    transform: rotate(10deg);
+    position: relative;
+    right: -40px;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.sticky {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.tape {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(131, 131, 131, 0.345);
+    position: absolute;
+    top: -10px;
+    left: 60px;
+}
+
+.tape-lg {
+    width: 40px;
+    height: 15px;
+    background-color: rgba(131, 131, 131, 0.345);
+    position: relative;
+    top: -27px;
+    left: 40px;
+}
+
+.card-body {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card-list {
+    margin: 0.5rem;
+    background-color: var(--light);
+    padding: 1rem;
+    color: var(--dark);
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.label {
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 0.3rem;
+    margin: 0.8rem auto;
+    width: fit-content;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.profile {
+    color: var(--light);
+}
+
+dd {
+    text-align: center;
+    margin: 0 auto;
+    font-family: var(--t1);
+    /* font-family: "Amatic SC"; */
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--dark);
+}
+
+dd > a {
+    background-color: rgb(2, 255, 179);
+    padding: 0.3rem 0.4rem;
+    color: var(--dark);
+}
+
+dd:last-of-type {
+
+}
+
+/** MEDIA QUERIES **/
