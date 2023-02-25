@@ -193,9 +193,3 @@ dd > a {
     padding: 0.3rem 0.4rem;
     color: var(--dark);
 }
-
-dd:last-of-type {
-
-}
-
-/** MEDIA QUERIES **/
