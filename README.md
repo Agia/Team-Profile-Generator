@@ -130,6 +130,7 @@ Here's a non-exhaustive list of the areas I would like to revisit in the future:
         - Ideally, this would allow for lower case middle strings (Ana **da** Armas, for example).
 - [ ] Allowing for a company email slug to be entered at start (`mia.paulson@company.com`, so only `mia.paulson` would need to be entered as `@company.com` would be added programmatically).
 - [x] Improve the responsiveness of the provided HTML, and change the aesthetic to be less generic.
+- [ ] Minor edits to positioning of some elements in CSS.
 
 
 <p align="right">(<a href="#table-of-contents">back to top</a>)</p>
