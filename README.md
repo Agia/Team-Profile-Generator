@@ -106,6 +106,10 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 - The screenshot below shows the same working application output, but with the originally provided render function (found at `assets/original-html-render/page-template.js`). To utilize this, just swap this into `src/page-template.js`, replacing the file same-named file used above.
 ![Screenshot of the generated HTML output using the provided / original render function](./assets/img/screenshot-providedhtml.png)
 
+#### Testing
+
+![Gif demonstrating tests being ran, and the results, in this instance, all passing](./assets/img/tests.gif)
+
 <p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 <hr/>
