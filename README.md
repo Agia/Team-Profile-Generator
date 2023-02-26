@@ -93,18 +93,18 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 - Once you select the option to 'Finish building your team', a `team.html` file will be generated, containing your team profiles from the information provided, and can be found in the `output` directory (`output/team.html`).
 
 ### Video Demo
-<!-- TODO: Upload and add link to GIF once completed -->
-![Gif showing the command-line application is use]()
+
+![Gif showing the command-line application is use](./assets/img/Team-Profile-Generator.gif)
 
 ### Screenshots
 
-#### Application in Use
-<!-- TODO: Upload and add link to PNG once completed -->
-![Screenshot of the command-line application in use]()
-
 #### Generated Output
-<!-- TODO: Upload and add link to PNG once completed -->
-![Screenshot of the generated HTML output from the app]()
+
+- The screenshot below demonstrates the output using the edited render function, found in `src/page-template.js` render function and the `assets/css/style.css`, and runs as default.
+![Screenshot of the generated HTML output from the app](./assets/img/screenshot-noticeboard.png)
+
+- The screenshot below shows the same working application output, but with the originally provided render function (found at `assets/original-html-render/page-template.js`). To utilize this, just swap this into `src/page-template.js`, replacing the file same-named file used above.
+![Screenshot of the generated HTML output using the provided / original render function](./assets/img/screenshot-providedhtml.png)
 
 <p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
