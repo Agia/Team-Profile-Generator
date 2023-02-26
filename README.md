@@ -54,7 +54,7 @@ A Node.js command-line application, that takes in information, from the user, ab
 * <img src="https://img.shields.io/badge/jest-blue?style=for-the-badge&logo=npm&logoColor=white" />
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 
 ## Getting Started
@@ -78,7 +78,7 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
     ```
 3. You're all set!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 <hr/>
 
@@ -106,15 +106,21 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 <!-- TODO: Upload and add link to PNG once completed -->
 ![Screenshot of the generated HTML output from the app]()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 <hr/>
 
 ## Future Plans
 
-As this project was part of a time-limited challenge, my focus was on meeting the remit of the challenge, and it's particular requirements as completely, and as well as possible, within the time alloted.
+As this project was part of a time-limited challenge, my focus was on meeting the remit of the challenge, and it's particular requirements, as completely, and as well as possible, within the time alloted.
 
 With that in mind, I have listed a few areas I would like to revisit, and improve upon, in the future, that were outside of the requirements of the challenge, but could provide an opportunity to further develop my skill set.
+
+Within the initial challenge submission, I did manage to squeeze in a few additions that weren't strictly required, but presented a great chance to hone my skills. For example, I added basic validation of input from prompts such as ensuring user input matched what was expected in terms of data type (e.g. non-empty strings where a string was expected, and required, and numbers when expecting numbers). I also added some basic email validation for the email input, utilzing a `_@_._` pattern, which, although not as strict as it could be, strikes a good balance of robustness and permissiveness.
+
+In addition, and to take any opportunity to practice my HTML and CSS skills, I edited the original `page-template.js` so that the HTML output was more responsive than the original barebones Bootstrap-based option (you can find the original in `assets/original-html-render/page-template.js` for reference, or if you would prefer to utilize that). To work with the new output (which doesn't make use of a CSS framework), I added `assest/css/style.css` that leans the output toward a clean, playful aesthetic, allowing me to keep practicing those CSS muscles.
+
+Here's a non-exhaustive list of the areas I would like to revisit in the future:
 
 - [ ] Validation for repeated number inputs relating to employee `ID` number.
 - [ ] Clear previous input from command-line, if not validated (currently retains previous entry)
@@ -126,7 +132,7 @@ With that in mind, I have listed a few areas I would like to revisit, and improv
 - [x] Improve the responsiveness of the provided HTML, and change the aesthetic to be less generic.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 <br/>
 
@@ -135,7 +141,7 @@ With that in mind, I have listed a few areas I would like to revisit, and improv
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 <br/>
 
@@ -145,7 +151,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * [StackOverflow]() - primarily for researching errors.
 * [MDN]() for general syntax confirmation.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 
 
