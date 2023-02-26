@@ -81,6 +81,7 @@ h1 {
     background-color: #fbfbfb;
     border: #777777 25px solid;
     box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    /* max-width: 450px; */
 }
 
 .card-header {

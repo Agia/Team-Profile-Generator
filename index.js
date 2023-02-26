@@ -34,7 +34,6 @@ const starterQuestions = [
             }
         },
     },
-
     {
         type: 'input',
         name: 'id',
@@ -48,7 +47,6 @@ const starterQuestions = [
             }
         }
     },
-
     {
         type: 'input',
         name: 'email',
@@ -62,10 +60,11 @@ const starterQuestions = [
                 console.log("\nYou need to enter a valid email.")
                 return false; 
             }
-
+        },
+        filter: email => {
+            return email.toLowerCase();
         },
     },
-
     {
         type: 'input',
         name: 'officeNumber',
@@ -132,6 +131,9 @@ const engineerQuestions = [
                 return false; 
             }
 
+        },
+        filter: email => {
+            return email.toLowerCase();
         },
     },
 
@@ -201,6 +203,9 @@ const internQuestions = [
                 return false; 
             }
 
+        },
+        filter: email => {
+            return email.toLowerCase();
         },
     },
 
