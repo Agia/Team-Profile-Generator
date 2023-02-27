@@ -33,7 +33,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#future-plans">Future Plans</a></li>
+    <li><a href="#background">Background</a></li>
+    <ul>
+      <li><a href="#future-plans">Future Plans</a></li>
+    </ul>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -106,6 +109,9 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 - The screenshot below shows the same working application output, but with the originally provided render function (found at `assets/original-html-render/page-template.js`). To utilize this, just swap this into `src/page-template.js`, replacing the file same-named file used above.
 ![Screenshot of the generated HTML output using the provided / original render function](./assets/img/screenshot-providedhtml.png)
 
+- The screenshot below shows the same working application, but generating a dark-style output, with an altered `page-template.js` file and separate `style.css` (both of which can be found in `assets/extras/dark style/` directory).
+![Screenshot of the generated output using the dark-style files](./assets/img/screenshot-dark.png)
+
 #### Testing
 
 ![Gif demonstrating tests being ran, and the results, in this instance, all passing](./assets/img/tests.gif)
@@ -114,7 +120,7 @@ You'll need to have Node.js `18.x` (or higher) installed on your system (you can
 
 <hr/>
 
-## Future Plans
+## Background
 
 As this project was part of a time-limited challenge, my focus was on meeting the remit of the challenge, and it's particular requirements, as completely, and as well as possible, within the time alloted.
 
@@ -122,7 +128,11 @@ With that in mind, I have listed a few areas I would like to revisit, and improv
 
 Within the initial challenge submission, I did manage to squeeze in a few additions that weren't strictly required, but presented a great chance to hone my skills. For example, I added basic validation of input from prompts such as ensuring user input matched what was expected in terms of data type (e.g. non-empty strings where a string was expected, and required, and numbers when expecting numbers). I also added some basic email validation for the email input, utilzing a `_@_._` pattern, which, although not as strict as it could be, strikes a good balance of robustness and permissiveness. Finally, on the JavaScript side, I added functionality to make email user input be lowercased, before rendering.
 
-In addition to the functional, and to take any opportunity to practice my HTML and CSS skills, I edited the original `page-template.js` so that the HTML output was more responsive than the original barebones Bootstrap-based option (you can find the original in `assets/original-html-render/page-template.js` for reference, or if you would prefer to utilize that). To work with the new output (which doesn't make use of a CSS framework), I added `assest/css/style.css` that leans the output toward a clean, playful aesthetic, allowing me to keep practicing those CSS muscles.
+In addition to the more functional, and to take any opportunity to practice my HTML and CSS skills, I edited the original `page-template.js` so that the HTML output was more responsive than the original barebones Bootstrap-based option (you can find the original in `assets/extras/original-html-render/page-template.js` for reference, or if you would prefer to utilize that). To work with the new output (which doesn't make use of a CSS framework), I added `assest/css/style.css` that leans the output toward a clean, playful aesthetic, allowing me to keep practicing those CSS muscles.
+
+As time allowed, I also created a dark-style output, (pictured above in the 'Screenshots' section), where you can find the relevant JS and CSS files in `assets/extras/dark-style/`.
+
+### Future Plans
 
 Here's a non-exhaustive list of the areas I would like to revisit in the future:
 

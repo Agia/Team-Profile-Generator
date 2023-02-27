@@ -1,0 +1,149 @@
+/** FONTS **/
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Fira+Sans:wght@100&display=swap');
+
+/** VARIABLES **/
+:root {
+    --light: #fcf7f8;
+    --dark: #2a2d34;
+    --gray: #918b76;
+    --highlight-1: #9381ff;
+    --highlight-2: #feea00;
+    --title: 'Squada One', sans-serif;
+    --body: 'Fira Sans', sans-serif;
+}
+
+
+/** RESET **/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/** STYLES **/
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: var(--body);
+}
+
+header {
+    display: flex;
+}
+
+h1 {
+    margin: 4rem;
+    font-family: var(--title);
+    font-size: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 2rem;
+}
+
+.card {
+    flex: 0 1 calc(300px - 2rem);
+    border: 1px rgba(0, 0, 0, 0.564) solid;
+    /* border: 0.1px var(--highlight-2) solid; */
+    padding: 1rem 0;
+    box-shadow: 10px 10px 0px 0px rgba(21, 21, 21, 0.75);
+    margin: 1.5rem;
+}
+
+.name {
+    font-family: var(--title);
+    font-size: 2rem;
+    margin: 0 0.7rem;
+}
+
+.role {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px var(--highlight-1) solid;
+    margin: 0 0.7rem;
+}
+
+.role-name, .role-icon, .name {
+    padding: 0 1rem 1rem;
+}
+
+.role-name {
+    color: var(--highlight-2);
+}
+
+.role-icon {
+    font-size: 1.4rem;
+}
+
+i {
+    color: var(--gray);
+}
+
+.label-value-pair {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.7rem;
+}
+
+.label {
+    font-family: var(--title);
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.value {
+    font-size: 1.4rem;
+    color: var(--highlight-2);
+}
+
+.id-number {
+    text-align: center;
+}
+
+.email {
+    margin: 0.4rem 0;
+}
+
+.email > i {
+    padding: 0 1rem;
+}
+
+a {
+    font-family: var(--title);
+    font-size: 1.4rem;
+}
+
+.gh-value {
+    font-size: 1.7rem;
+}
+
+a:hover {
+    color: var(--highlight-1);
+}
